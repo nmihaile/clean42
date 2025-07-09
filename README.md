@@ -18,8 +18,8 @@ is a small c++ program that uses a custom striped down and enhanced `_clean_cach
 # Configuration
 go to the top of the `main.cpp`, there you can setup:
 ```c++
-#define SLEEP_TIME 100	// time between cleaning in seconds
-#define SLEEP_STEP 1	// countdown step time to print the remaining seconds
+#define SLEEP_TIME 100	// Time interval between cleaning cycles, in seconds
+#define SLEEP_STEP 1	// Time decrement step for printing the countdown of remaining seconds
 ```
 
 
