@@ -1,6 +1,6 @@
 # clean42
 
-is a small c++ program that uses a custom striped down `_clean_script.sh` from [Cleaner_42](https://github.com/ombhd/Cleaner_42){:target="_blank" rel="noopener"} and executes it after a countdown.
+is a small c++ program that uses a custom striped down `_clean_script.sh` from [Cleaner_42](https://github.com/ombhd/Cleaner_42) and executes it after a countdown.
 
 **It preservers your vscode windows.**
 
