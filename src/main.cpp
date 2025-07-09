@@ -2,11 +2,11 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-#include <cstdlib> // For system call
+#include <cstdlib> // system()
 #include <csignal>
 
-#define SLEEP_TIME 100
-#define SLEEP_STEP 1
+#define SLEEP_TIME 100	// Time interval between cleaning cycles, in seconds
+#define SLEEP_STEP 1	// Time decrement step for printing the countdown of remaining seconds
 
 #define DEFAULT		"\033[0m"
 #define BOLD		"\033[1m"
@@ -125,11 +125,8 @@ int main(int ac, char **av) {
 			printCounter(timer, sleep_time);
 			timer -= SLEEP_STEP;
         	std::this_thread::sleep_for(std::chrono::seconds(SLEEP_STEP));
-			// std::cout << ".";
 		}
 		printCounter(0, sleep_time); std::this_thread::sleep_for(std::chrono::milliseconds(250));
-		// std::cout << GO_TO_FRONT << DEFAULT;
-		// std::cout.flush();
     }
 
 	return 0;
