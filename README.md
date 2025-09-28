@@ -36,3 +36,24 @@ make
 ./clean42
 ```
 use `<ctrl-c>` to quit
+
+
+# Additional manual cleanup commands:
+```sh
+# Clear npm cache
+npm cache clean --force
+
+# Remove unused Docker build cache
+docker builder prune
+
+# Completly prune Docker: this will removes all:
+# -> images, containers, networks, volumes, dangling images, build cache
+# Warning: This will delete all Docker data - use with caution!
+docker system prune -a --volumes
+
+# Clean package manager caches
+brew cleanup
+brew autoremove
+yarn cache clean
+pip cache purge
+```
